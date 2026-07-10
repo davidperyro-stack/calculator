@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Pery`s calculator</title>
+        <link rel="stylesheet" href="style.css">
+        <div class="calculator">
+            <input type="text" id="display">
+            <br><br>
+            <button onclick="addNumber('7')">7</button>
+            <button onclick="addNumber('8')">8</button>
+            <button onclick="addNumber('9')">9</button>
+            <button onclick="addNumber('+')">+</button>
+
+        <br><br>
+        <button onclick="addNumber('4')">4</button>
+        <button onclick="addNumber('5')">5</button>
+        <button onclick="addNumber('6')">6</button>
+        <button onclick="addNumber('-')">-</button>
+
+        <br><br>
+        <button onclick="addNumber('1')">1</button>
+        <button onclick="addNumber('2')">2</button>
+        <button onclick="addNumber('3')">3</button>
+        <button onclick="addNumber('*')">*</button>
+
+        <br><br>
+        <button onclick="addNumber('0')">0</button>
+        <button onclick="addNumber('.')">.</button>
+        <button onclick="calculate()">=</button>
+        <button onclick="addNumber('/')">/</button>
+        </div>
+
+        <img src="blahaj-spin.gif" alt="blahaj" class="gif">
+
+        <script>
+            function addNumber(number) {
+                document.getElementById("display").value += number;
+            }
+
+            function calculate() {
+                var display = document.getElementById("display");
+                display.value = eval(display.value);
+            }
+        </script>
+    
+    </head>
+
+    <body>
+        </div>
+        <h1>Pery`s calculator</h1>
+        <p>This is a calculator calculator,dont expect anything OTHER THAN a calculator.</p>
+        <br><br>
+        <a href="https://davidperyro-stack.github.io/idontknowanything/index.html" target="_blank"> my personal site!</a>
+
+</html?
